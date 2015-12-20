@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Simon Sun's blogs]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2015-12-17T18:53:35.264Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name><![CDATA[Simon Sun]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Hexo搭建github静态博客]]></title>
+    <link href="http://yoursite.com/2015/12/18/Hexo%E6%90%AD%E5%BB%BAgithub%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2015/12/18/Hexo搭建github静态博客/</id>
+    <published>2015-12-17T18:09:01.000Z</published>
+    <updated>2015-12-17T18:53:35.264Z</updated>
+    <content type="html"><![CDATA[<p>终于稀里糊涂地成功搭建了博客，决定把自己踩过的坑写下来，让更多的人少掉坑。我的配置环境是win10.</p>
+<ol>
+<li><p>安装Node.js和git for windows。</p>
+</li>
+<li><p>github创建仓库，仓库名必须为【your_user_name.github.io】，要是不清楚your_user_name是啥，登录github，网址[www.github.com]后面接的就是你的用户名。<br><strong>坑1：用户名必须是小写，有空格和特殊字符行不行我不知道，你可以试一下。我的一开始是   SimonSunDev，后来改成了simonsundev。</strong></p>
+</li>
+<li><p>git for windows生成ssh key，把公钥添加到github。</p>
+</li>
+<li><p>打开git bash，输入<code>npm install hexo-cli -g</code>。以下命令都是在git bash下操作的。</p>
+</li>
+<li><p><code>hexo init myBlogs</code>创建myBlogs文件夹。</p>
+</li>
+<li><p><code>npm install</code></p>
+</li>
+<li><p><code>hexo server</code>启动hexo server，此时在浏览器里输入localhost:4000，应该有一篇Hexo自动生成的blog。按Ctrl+C停止server。<br><strong>坑2：我启动成功之后，再浏览器打开这个页面一直打不开。后来请教了大神学长，原来是4000端口号被占用了，该一下端口号就行了。例如打开myBlogs/node_modules/hexo-server/index.js，修改第6行port为1346，注意冒号后面有空格。重新启动，浏览器输入localhost:1346。成功！</strong></p>
+</li>
+<li><p>修改myBlogs根目录下的_config.yml，最后deploy部分修改成我这样：<br>deploy:<br>type: git<br>repo: git@github.com:simonsundev/simonsundev.github.io.git<br>branch: master<br><strong>坑3：冒号后面有空格，repo支持https和ssh。我这个是成功的，推荐也用ssh。</strong></p>
+</li>
+<li><p>在myBlogs根目录下执行<code>npm install hexo-deployer-git --save</code>。<br><strong>坑4：执行这条命令我这里报npm ERR!的错。Google到的解决办法是执行命令<code>npm config set registry http://registry.npmjs.org/</code>，然后再执行上面的命令。</strong></p>
+</li>
+<li><p>hexo-deployer-git安装成功后，执行3个命令<br><code>hexo clean</code><br><code>hexo generate</code><br><code>hexo deploy</code><br>这3个命令也是我们在写了新的博客，要deploy到github的时候执行的命令。</p>
+</li>
+</ol>
+<p>OK，到这里应该就结束了。打开浏览器输入<code>http://you_user_name.github.io</code>，如果出现的页面不是404，说明成功了。<br>最后记一下一个新建md博客的命令<code>hexo new &quot;My new Blog&quot;</code>，算是备忘。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>终于稀里糊涂地成功搭建了博客，决定把自己踩过的坑写下来，让更多的人少掉坑。我的配置环境是win10.</p>
+<ol>
+<li><p>安装Node.js和git for windows。</p>
+</li>
+<li><p>github创建仓库，仓库名必须为【your_use]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://yoursite.com/2015/12/18/hello-world/"/>
+    <id>http://yoursite.com/2015/12/18/hello-world/</id>
+    <published>2015-12-17T18:05:41.598Z</published>
+    <updated>2015-12-13T05:56:23.181Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
+    </summary>
+    
+  </entry>
+  
+</feed>
