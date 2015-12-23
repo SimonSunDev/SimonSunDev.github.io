@@ -53,28 +53,26 @@
 
 
 
-<meta name="description" content="终于稀里糊涂地成功搭建了博客，决定把自己踩过的坑写下来，让更多的人少掉坑。我的配置环境是win10.
+<meta name="description" content="本篇记录C++解析XML文件，TinyXML2支持解析XML语法的文件，不限于以.XML结尾的文件。代码来自官方文档地址：http://www.grinninglizard.com/tinyxml2docs/pages.html
 
-安装Node.js和git for windows。
-
-github创建仓库，仓库名必须为【your_user_name.github.io】，要是不清楚your_user_name是啥，登录github，网址[www.github.com]后面接的就是你的用户名。坑1：用户名必须是小写，有空格">
+环境：VS2013，win10
+tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（安装完之后要重启VS），新建一个控制台项目，创建成功后，在项目名">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo搭建github静态博客">
-<meta property="og:url" content="http://yoursite.com/2015/12/18/Hexo搭建github静态博客/index.html">
+<meta property="og:title" content="XML语法文件解析工具TinyXML2">
+<meta property="og:url" content="http://yoursite.com/2015/12/24/XML语法文件解析工具TinyXML2/index.html">
 <meta property="og:site_name" content="Simon Sun's blogs">
-<meta property="og:description" content="终于稀里糊涂地成功搭建了博客，决定把自己踩过的坑写下来，让更多的人少掉坑。我的配置环境是win10.
+<meta property="og:description" content="本篇记录C++解析XML文件，TinyXML2支持解析XML语法的文件，不限于以.XML结尾的文件。代码来自官方文档地址：http://www.grinninglizard.com/tinyxml2docs/pages.html
 
-安装Node.js和git for windows。
-
-github创建仓库，仓库名必须为【your_user_name.github.io】，要是不清楚your_user_name是啥，登录github，网址[www.github.com]后面接的就是你的用户名。坑1：用户名必须是小写，有空格">
-<meta property="og:updated_time" content="2015-12-17T18:53:35.264Z">
+环境：VS2013，win10
+tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（安装完之后要重启VS），新建一个控制台项目，创建成功后，在项目名">
+<meta property="og:image" content="http://yoursite.com/../images/XML语法文件解析工具TinyXML2.png">
+<meta property="og:updated_time" content="2015-12-23T20:48:33.889Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo搭建github静态博客">
-<meta name="twitter:description" content="终于稀里糊涂地成功搭建了博客，决定把自己踩过的坑写下来，让更多的人少掉坑。我的配置环境是win10.
+<meta name="twitter:title" content="XML语法文件解析工具TinyXML2">
+<meta name="twitter:description" content="本篇记录C++解析XML文件，TinyXML2支持解析XML语法的文件，不限于以.XML结尾的文件。代码来自官方文档地址：http://www.grinninglizard.com/tinyxml2docs/pages.html
 
-安装Node.js和git for windows。
-
-github创建仓库，仓库名必须为【your_user_name.github.io】，要是不清楚your_user_name是啥，登录github，网址[www.github.com]后面接的就是你的用户名。坑1：用户名必须是小写，有空格">
+环境：VS2013，win10
+tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（安装完之后要重启VS），新建一个控制台项目，创建成功后，在项目名">
 
 
 
@@ -86,7 +84,7 @@ github创建仓库，仓库名必须为【your_user_name.github.io】，要是�
   };
 </script>
 
-  <title> Hexo搭建github静态博客 | Simon Sun's blogs </title>
+  <title> XML语法文件解析工具TinyXML2 | Simon Sun's blogs </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +204,7 @@ github创建仓库，仓库名必须为【your_user_name.github.io】，要是�
             
             
               
-                Hexo搭建github静态博客
+                XML语法文件解析工具TinyXML2
               
             
           </h1>
@@ -215,8 +213,8 @@ github创建仓库，仓库名必须为【your_user_name.github.io】，要是�
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-12-18T02:09:01+08:00" content="2015-12-18">
-              2015-12-18
+            <time itemprop="dateCreated" datetime="2015-12-24T04:21:03+08:00" content="2015-12-24">
+              2015-12-24
             </time>
           </span>
 
@@ -239,30 +237,19 @@ github创建仓库，仓库名必须为【your_user_name.github.io】，要是�
       
 
       
-        <span itemprop="articleBody"><p>终于稀里糊涂地成功搭建了博客，决定把自己踩过的坑写下来，让更多的人少掉坑。我的配置环境是win10.</p>
+        <span itemprop="articleBody"><p>本篇记录C++解析XML文件，TinyXML2支持解析XML语法的文件，不限于以.XML结尾的文件。<br>代码来自官方文档地址：<a href="http://www.grinninglizard.com/tinyxml2docs/pages.html" target="_blank" rel="external">http://www.grinninglizard.com/tinyxml2docs/pages.html</a></p>
 <ol>
-<li><p>安装Node.js和git for windows。</p>
-</li>
-<li><p>github创建仓库，仓库名必须为【your_user_name.github.io】，要是不清楚your_user_name是啥，登录github，网址[www.github.com]后面接的就是你的用户名。<br><strong>坑1：用户名必须是小写，有空格和特殊字符行不行我不知道，你可以试一下。我的一开始是   SimonSunDev，后来改成了simonsundev。</strong></p>
-</li>
-<li><p>git for windows生成ssh key，把公钥添加到github。</p>
-</li>
-<li><p>打开git bash，输入<code>npm install hexo-cli -g</code>。以下命令都是在git bash下操作的。</p>
-</li>
-<li><p><code>hexo init myBlogs</code>创建myBlogs文件夹。</p>
-</li>
-<li><p><code>npm install</code></p>
-</li>
-<li><p><code>hexo server</code>启动hexo server，此时在浏览器里输入localhost:4000，应该有一篇Hexo自动生成的blog。按Ctrl+C停止server。<br><strong>坑2：我启动成功之后，再浏览器打开这个页面一直打不开。后来请教了大神学长，原来是4000端口号被占用了，该一下端口号就行了。例如打开myBlogs/node_modules/hexo-server/index.js，修改第6行port为1346，注意冒号后面有空格。重新启动，浏览器输入localhost:1346。成功！</strong></p>
-</li>
-<li><p>修改myBlogs根目录下的_config.yml，最后deploy部分修改成我这样：<br>deploy:<br>type: git<br>repo: git@github.com:simonsundev/simonsundev.github.io.git<br>branch: master<br><strong>坑3：冒号后面有空格，repo支持https和ssh。我这个是成功的，推荐也用ssh。</strong></p>
-</li>
-<li><p>在myBlogs根目录下执行<code>npm install hexo-deployer-git --save</code>。<br><strong>坑4：执行这条命令我这里报npm ERR!的错。Google到的解决办法是执行命令<code>npm config set registry http://registry.npmjs.org/</code>，然后再执行上面的命令。</strong></p>
-</li>
-<li><p>hexo-deployer-git安装成功后，执行3个命令<br><code>hexo clean</code><br><code>hexo generate</code><br><code>hexo deploy</code><br>这3个命令也是我们在写了新的博客，要deploy到github的时候执行的命令。</p>
+<li>环境：VS2013，win10</li>
+<li>tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（安装完之后要重启VS），新建一个控制台项目，创建成功后，在项目名称上右键，有一个选项“管理NuGet程序包”，点击，选择联机——&gt;All，右上角搜索tinyxml2，选择TinyXML-2安装。</li>
+<li>代码说明：<ul>
+<li>解析的xml来源可以是文件或者是字符串，两种解析方法都写了。</li>
+<li>属性值有两种表示方式，xml标签属性和子标签。两种解析方法都写了。</li>
+</ul>
 </li>
 </ol>
-<p>OK，到这里应该就结束了。打开浏览器输入<code>http://you_user_name.github.io</code>，如果出现的页面不是404，说明成功了。<br>最后记一下一个新建md博客的命令<code>hexo new &quot;My new Blog&quot;</code>，算是备忘。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">"tinyxml2.h"</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> tinyxml2;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	XMLDocument doc;</span><br><span class="line">	<span class="comment">//Parse an XML from char buffer</span></span><br><span class="line">	<span class="comment">//Get information out of XML</span></span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">char</span>* xml =</span><br><span class="line">		<span class="string">"&lt;?xml version=\"1.0\"?&gt;"</span></span><br><span class="line">		<span class="string">"&lt;!DOCTYPE PLAY SYSTEM \"play.dtd\"&gt;"</span></span><br><span class="line">		<span class="string">"&lt;PLAY&gt;"</span></span><br><span class="line">		<span class="string">"&lt;TITLE&gt;A Midsummer Night's Dream&lt;/TITLE&gt;"</span></span><br><span class="line">		<span class="string">"&lt;/PLAY&gt;"</span>;</span><br><span class="line">	doc.Parse(xml);</span><br><span class="line">	XMLElement* titleElement = doc.FirstChildElement(<span class="string">"PLAY"</span>)-&gt;FirstChildElement(<span class="string">"TITLE"</span>);</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">char</span>* title = titleElement-&gt;GetText();</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Name of play (1):%s\n"</span>,title);<span class="comment">//输出Name of play (1):A Midsummer Night's Dream</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//Read attributes and text information.	</span></span><br><span class="line">	<span class="comment">//way 1</span></span><br><span class="line">	xml=<span class="string">"&lt;?xml version=\"1.0\"?&gt;"</span></span><br><span class="line">		<span class="string">"&lt;!DOCTYPE PLAY SYSTEM \"play.dtd\"&gt;"</span></span><br><span class="line">		<span class="string">"&lt;PLAY&gt;"</span></span><br><span class="line">		<span class="string">"&lt;TITLE&gt;A Midsummer Night's &lt;b&gt;Dream&lt;/b&gt;&lt;/TITLE&gt;"</span></span><br><span class="line">		<span class="string">"&lt;/PLAY&gt;"</span>;</span><br><span class="line">	doc.Parse(xml);</span><br><span class="line">	XMLText* textNode = titleElement-&gt;FirstChild()-&gt;ToText();</span><br><span class="line">	title = textNode-&gt;Value();</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Name of play (2): %s\n"</span>, title);<span class="comment">//输出Name of play (2): A Midsummer Night's</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//way 2</span></span><br><span class="line">	xml =<span class="string">"&lt;information&gt;"</span></span><br><span class="line">		<span class="string">"   &lt;attributeApproach v='2' /&gt;"</span></span><br><span class="line">		<span class="string">"   &lt;textApproach&gt;"</span></span><br><span class="line">		<span class="string">"       &lt;v&gt;-2&lt;/v&gt;"</span></span><br><span class="line">		<span class="string">"   &lt;/textApproach&gt;"</span></span><br><span class="line">		<span class="string">"&lt;/information&gt;"</span>;</span><br><span class="line">	doc.Parse(xml);</span><br><span class="line">	<span class="keyword">int</span> v0=-<span class="number">1</span>;</span><br><span class="line">	XMLElement* attributeApproachElement = doc.FirstChildElement()-&gt;FirstChildElement(<span class="string">"attributeApproach"</span>);</span><br><span class="line">	attributeApproachElement-&gt;QueryAttribute(<span class="string">"v"</span>, &amp;v0);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"v0=%d\n"</span>, v0);<span class="comment">//输出v0=2</span></span><br><span class="line">	<span class="keyword">int</span> v1 = -<span class="number">1</span>;</span><br><span class="line">	XMLElement* textApproachElement = doc.FirstChildElement()-&gt;FirstChildElement(<span class="string">"textApproach"</span>);</span><br><span class="line">	textApproachElement-&gt;FirstChildElement(<span class="string">"v"</span>)-&gt;QueryIntText(&amp;v1);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"v1=%d\n"</span>, v1);<span class="comment">//输出v1=-2</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//load xml file and get information out of xml file</span></span><br><span class="line">	doc.LoadFile(<span class="string">"test.xml"</span>);</span><br><span class="line">	titleElement = <span class="literal">NULL</span>;</span><br><span class="line">	title = <span class="literal">NULL</span>;</span><br><span class="line">	titleElement = doc.FirstChildElement(<span class="string">"PLAY"</span>)-&gt;FirstChildElement(<span class="string">"TITLE"</span>);</span><br><span class="line">	title = titleElement-&gt;GetText();</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Name of play (1):%s\n"</span>, title);<span class="comment">//输出Name of play (1):A Midsummer Night's Dream</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>test.xml文件如下<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">&lt;?xml version="1.0"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">PLAY</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">TITLE</span>&gt;</span>A Midsummer Night's Dream<span class="tag">&lt;/<span class="title">TITLE</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">PLAY</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>结果显示如下：<br><img src="../images/XML语法文件解析工具TinyXML2.png" alt="result"></p>
 </span>
       
     </div>
@@ -274,17 +261,13 @@ github创建仓库，仓库名必须为【your_user_name.github.io】，要是�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/18/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2015/12/18/Hexo搭建github静态博客/" rel="next" title="Hexo搭建github静态博客">
+                <i class="fa fa-chevron-left"></i> Hexo搭建github静态博客
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/24/XML语法文件解析工具TinyXML2/" rel="prev" title="XML语法文件解析工具TinyXML2">
-                XML语法文件解析工具TinyXML2 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
