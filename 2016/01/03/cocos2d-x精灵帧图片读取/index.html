@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="cocos2d-x," />
 
 
 
@@ -53,28 +53,16 @@
 
 
 
-<meta name="description" content="终于稀里糊涂地成功搭建了博客，决定把自己踩过的坑写下来，让更多的人少掉坑。我的配置环境是win10.
-
-安装Node.js和git for windows。
-
-github创建仓库，仓库名必须为【your_user_name.github.io】，要是不清楚your_user_name是啥，登录github，网址[www.github.com]后面接的就是你的用户名。坑1：用户名必须是小写，有空格">
+<meta name="description" content="有些情况下，比如从爱给网获取的精灵帧图片，没有plist文件，也没有TiledMap文件，只有png图片，这种情况下如何读取精灵帧图片呢？我翻看了cocos2d-x 3.9的官方api文档，找到了SpriteFrame这个类，其中有一个类方法static SpriteFrame* create    (    const std::string &amp;amp;     filename,const R">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo搭建github静态博客">
-<meta property="og:url" content="http://yoursite.com/2015/12/18/Hexo搭建github静态博客/index.html">
+<meta property="og:title" content="cocos2d-x精灵帧图片读取">
+<meta property="og:url" content="http://yoursite.com/2016/01/03/cocos2d-x精灵帧图片读取/index.html">
 <meta property="og:site_name" content="Simon Sun's blogs">
-<meta property="og:description" content="终于稀里糊涂地成功搭建了博客，决定把自己踩过的坑写下来，让更多的人少掉坑。我的配置环境是win10.
-
-安装Node.js和git for windows。
-
-github创建仓库，仓库名必须为【your_user_name.github.io】，要是不清楚your_user_name是啥，登录github，网址[www.github.com]后面接的就是你的用户名。坑1：用户名必须是小写，有空格">
-<meta property="og:updated_time" content="2015-12-17T18:53:35.264Z">
+<meta property="og:description" content="有些情况下，比如从爱给网获取的精灵帧图片，没有plist文件，也没有TiledMap文件，只有png图片，这种情况下如何读取精灵帧图片呢？我翻看了cocos2d-x 3.9的官方api文档，找到了SpriteFrame这个类，其中有一个类方法static SpriteFrame* create    (    const std::string &amp;amp;     filename,const R">
+<meta property="og:updated_time" content="2016-01-03T03:20:46.932Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo搭建github静态博客">
-<meta name="twitter:description" content="终于稀里糊涂地成功搭建了博客，决定把自己踩过的坑写下来，让更多的人少掉坑。我的配置环境是win10.
-
-安装Node.js和git for windows。
-
-github创建仓库，仓库名必须为【your_user_name.github.io】，要是不清楚your_user_name是啥，登录github，网址[www.github.com]后面接的就是你的用户名。坑1：用户名必须是小写，有空格">
+<meta name="twitter:title" content="cocos2d-x精灵帧图片读取">
+<meta name="twitter:description" content="有些情况下，比如从爱给网获取的精灵帧图片，没有plist文件，也没有TiledMap文件，只有png图片，这种情况下如何读取精灵帧图片呢？我翻看了cocos2d-x 3.9的官方api文档，找到了SpriteFrame这个类，其中有一个类方法static SpriteFrame* create    (    const std::string &amp;amp;     filename,const R">
 
 
 
@@ -86,7 +74,7 @@ github创建仓库，仓库名必须为【your_user_name.github.io】，要是�
   };
 </script>
 
-  <title> Hexo搭建github静态博客 | Simon Sun's blogs </title>
+  <title> cocos2d-x精灵帧图片读取 | Simon Sun's blogs </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +194,7 @@ github创建仓库，仓库名必须为【your_user_name.github.io】，要是�
             
             
               
-                Hexo搭建github静态博客
+                cocos2d-x精灵帧图片读取
               
             
           </h1>
@@ -215,8 +203,8 @@ github创建仓库，仓库名必须为【your_user_name.github.io】，要是�
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-12-18T02:09:01+08:00" content="2015-12-18">
-              2015-12-18
+            <time itemprop="dateCreated" datetime="2016-01-03T10:57:50+08:00" content="2016-01-03">
+              2016-01-03
             </time>
           </span>
 
@@ -239,52 +227,35 @@ github创建仓库，仓库名必须为【your_user_name.github.io】，要是�
       
 
       
-        <span itemprop="articleBody"><p>终于稀里糊涂地成功搭建了博客，决定把自己踩过的坑写下来，让更多的人少掉坑。我的配置环境是win10.</p>
-<ol>
-<li><p>安装Node.js和git for windows。</p>
-</li>
-<li><p>github创建仓库，仓库名必须为【your_user_name.github.io】，要是不清楚your_user_name是啥，登录github，网址[www.github.com]后面接的就是你的用户名。<br><strong>坑1：用户名必须是小写，有空格和特殊字符行不行我不知道，你可以试一下。我的一开始是   SimonSunDev，后来改成了simonsundev。</strong></p>
-</li>
-<li><p>git for windows生成ssh key，把公钥添加到github。</p>
-</li>
-<li><p>打开git bash，输入<code>npm install hexo-cli -g</code>。以下命令都是在git bash下操作的。</p>
-</li>
-<li><p><code>hexo init myBlogs</code>创建myBlogs文件夹。</p>
-</li>
-<li><p><code>npm install</code></p>
-</li>
-<li><p><code>hexo server</code>启动hexo server，此时在浏览器里输入localhost:4000，应该有一篇Hexo自动生成的blog。按Ctrl+C停止server。<br><strong>坑2：我启动成功之后，再浏览器打开这个页面一直打不开。后来请教了大神学长，原来是4000端口号被占用了，该一下端口号就行了。例如打开myBlogs/node_modules/hexo-server/index.js，修改第6行port为1346，注意冒号后面有空格。重新启动，浏览器输入localhost:1346。成功！</strong></p>
-</li>
-<li><p>修改myBlogs根目录下的_config.yml，最后deploy部分修改成我这样：<br>deploy:<br>type: git<br>repo: git@github.com:simonsundev/simonsundev.github.io.git<br>branch: master<br><strong>坑3：冒号后面有空格，repo支持https和ssh。我这个是成功的，推荐也用ssh。</strong></p>
-</li>
-<li><p>在myBlogs根目录下执行<code>npm install hexo-deployer-git --save</code>。<br><strong>坑4：执行这条命令我这里报npm ERR!的错。Google到的解决办法是执行命令<code>npm config set registry http://registry.npmjs.org/</code>，然后再执行上面的命令。</strong></p>
-</li>
-<li><p>hexo-deployer-git安装成功后，执行3个命令<br><code>hexo clean</code><br><code>hexo generate</code><br><code>hexo deploy</code><br>这3个命令也是我们在写了新的博客，要deploy到github的时候执行的命令。</p>
-</li>
-</ol>
-<p>OK，到这里应该就结束了。打开浏览器输入<code>http://you_user_name.github.io</code>，如果出现的页面不是404，说明成功了。<br>最后记一下一个新建md博客的命令<code>hexo new &quot;My new Blog&quot;</code>，算是备忘。</p>
+        <span itemprop="articleBody"><p>有些情况下，比如从<a href="http://www.2gei.com/" target="_blank" rel="external">爱给网</a>获取的精灵帧图片，没有plist文件，也没有TiledMap文件，只有png图片，这种情况下如何读取精灵帧图片呢？我翻看了cocos2d-x 3.9的官方api文档，找到了SpriteFrame这个类，其中有一个类方法<br><code>static SpriteFrame* create    (    const std::string &amp;     filename,const Rect &amp;     rect )</code>，这个方法的功能是“使用指定的图片文件与矩形区域创建一个 SpriteFrame。 这个方法假设 SpriteFrame 没有进行修剪。”<br>主要就是使用这个方法来实现直接对png精灵帧图片的读取。我封装成了一个单一职能的类SpriteFrameUtils。类定义和实现如下：<br>code is here:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">ifndef</span> _SPRITEFRAMEUTILS_H__</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> _SPRITEFRAMEUTILS_H__</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">"cocos2d.h"</span></span></span><br><span class="line"></span><br><span class="line">USING_NS_CC;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> SpriteFrameUtils&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="function"><span class="keyword">static</span> Animate* <span class="title">readSpriteSheet</span><span class="params">(<span class="built_in">std</span>::<span class="built_in">string</span> fileName, <span class="keyword">int</span> width, <span class="keyword">int</span> height, <span class="keyword">int</span> row, <span class="keyword">int</span> column)</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">"SpriteFrameUtils.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span><br><span class="line">参数说明：</span><br><span class="line">fileName	图片路径</span><br><span class="line">width		每个序列帧的跨度</span><br><span class="line">height		每个序列帧的高度</span><br><span class="line">row			行数</span><br><span class="line">column		列数</span><br><span class="line">*/</span></span><br><span class="line">Animate* SpriteFrameUtils::readSpriteSheet(<span class="built_in">std</span>::<span class="built_in">string</span> fileName, <span class="keyword">int</span> width, <span class="keyword">int</span> height, <span class="keyword">int</span> row, <span class="keyword">int</span> column)</span><br><span class="line">&#123;</span><br><span class="line">	Vector&lt;SpriteFrame*&gt; vec;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; row; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; column; j++)</span><br><span class="line">		&#123;</span><br><span class="line">			vec.pushBack(SpriteFrame::create(fileName, Rect(width * j, height * i, width, height)));</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	Animation *animation = Animation::create();</span><br><span class="line">	animation-&gt;initWithSpriteFrames(vec, <span class="number">0.2f</span>, <span class="number">1</span>);</span><br><span class="line">	Animate *animate = Animate::create(animation);</span><br><span class="line">	<span class="keyword">return</span> animate;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>使用示例：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="built_in">string</span> test = <span class="string">"test.png"</span>;</span><br><span class="line">Sprite *sprite = Sprite::create();</span><br><span class="line">addChild(sprite);</span><br><span class="line">sprite-&gt;setPosition(Vec2(visibleSize.width / <span class="number">2.0f</span>, visibleSize.height/<span class="number">2.0f</span>));</span><br><span class="line"></span><br><span class="line">Animate *animate = SpriteFrameUtils::readSpriteSheet(test, <span class="number">192</span>, <span class="number">192</span>, <span class="number">20</span>, <span class="number">5</span>);</span><br><span class="line">sprite-&gt;runAction(RepeatForever::create(animate));</span><br></pre></td></tr></table></figure></p>
+<p>扩展：需要实现一个SpriteFrameManager类来管理由png图片生成的一个系列一个系列的SpriteFrame，如果使用cocos2d-x为我们提供的SpriteFrameCache来管理很不方便，尤其在管理很多系列SpriteFrame的时候。这个SpriteFrameManager的功能与SpriteFrameCache类似，都是以键值对的形式存储SpriteFrame，只不过SpriteFrameManager存取的是一个系列的SpriteFrame。相应的，SpriteFrameUtils在readSpriteSheet方法中，要将vec以键值对的方式添加到SpriteFrameManager中。</p>
 </span>
       
     </div>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/cocos2d-x/" rel="tag">#cocos2d-x</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/18/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2015/12/24/XML语法文件解析工具TinyXML2/" rel="next" title="XML语法文件解析工具TinyXML2">
+                <i class="fa fa-chevron-left"></i> XML语法文件解析工具TinyXML2
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/24/XML语法文件解析工具TinyXML2/" rel="prev" title="XML语法文件解析工具TinyXML2">
-                XML语法文件解析工具TinyXML2 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
