@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="C++,XML," />
 
 
 
@@ -53,33 +53,24 @@
 
 
 
-<meta name="description" content="本篇记录C++解析XML文件，TinyXML2支持解析XML语法的文件，不限于以.XML结尾的文件。代码来自官方文档地址：http://www.grinninglizard.com/tinyxml2docs/pages.html
-
-环境：VS2013，win10
-tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（安装完之后要重启VS），新建一个控制台项目，创建成功后，在项目名">
+<meta name="description" content="&amp;#x672C;&amp;#x7BC7;&amp;#x8BB0;&amp;#x5F55;C++&amp;#x89E3;&amp;#x6790;XML&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;TinyXML2&amp;#x652F;&amp;#x6301;&amp;#x89E3;&amp;#x6790;XML&amp;#x8BED;&amp;#x6CD5;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x4E0D;&amp;#x9650;&amp;#x4E8E;&amp;#x4EE5">
 <meta property="og:type" content="article">
 <meta property="og:title" content="XML语法文件解析工具TinyXML2">
 <meta property="og:url" content="http://yoursite.com/2015/12/24/XML语法文件解析工具TinyXML2/index.html">
 <meta property="og:site_name" content="Simon Sun's blogs">
-<meta property="og:description" content="本篇记录C++解析XML文件，TinyXML2支持解析XML语法的文件，不限于以.XML结尾的文件。代码来自官方文档地址：http://www.grinninglizard.com/tinyxml2docs/pages.html
-
-环境：VS2013，win10
-tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（安装完之后要重启VS），新建一个控制台项目，创建成功后，在项目名">
+<meta property="og:description" content="&amp;#x672C;&amp;#x7BC7;&amp;#x8BB0;&amp;#x5F55;C++&amp;#x89E3;&amp;#x6790;XML&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;TinyXML2&amp;#x652F;&amp;#x6301;&amp;#x89E3;&amp;#x6790;XML&amp;#x8BED;&amp;#x6CD5;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x4E0D;&amp;#x9650;&amp;#x4E8E;&amp;#x4EE5">
 <meta property="og:image" content="http://img.hoop8.com/attachments/1512/1893401810423.png">
-<meta property="og:updated_time" content="2015-12-23T20:56:55.696Z">
+<meta property="og:updated_time" content="2016-02-03T15:22:27.709Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="XML语法文件解析工具TinyXML2">
-<meta name="twitter:description" content="本篇记录C++解析XML文件，TinyXML2支持解析XML语法的文件，不限于以.XML结尾的文件。代码来自官方文档地址：http://www.grinninglizard.com/tinyxml2docs/pages.html
-
-环境：VS2013，win10
-tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（安装完之后要重启VS），新建一个控制台项目，创建成功后，在项目名">
+<meta name="twitter:description" content="&amp;#x672C;&amp;#x7BC7;&amp;#x8BB0;&amp;#x5F55;C++&amp;#x89E3;&amp;#x6790;XML&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;TinyXML2&amp;#x652F;&amp;#x6301;&amp;#x89E3;&amp;#x6790;XML&amp;#x8BED;&amp;#x6CD5;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&amp;#xFF0C;&amp;#x4E0D;&amp;#x9650;&amp;#x4E8E;&amp;#x4EE5">
 
 
 
 <script type="text/javascript" id="hexo.configuration">
   var CONFIG = {
-    scheme: '',
-    sidebar: 'always',
+    scheme: 'Mist',
+    sidebar: 'post',
     motion: true
   };
 </script>
@@ -157,6 +148,16 @@ tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（�
         </li>
       
         
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -173,6 +174,16 @@ tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（�
               <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+            
+            公益404
           </a>
         </li>
       
@@ -229,8 +240,30 @@ tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（�
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/cocos2d-x/" itemprop="url" rel="index">
+                    <span itemprop="name">cocos2d-x</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/12/24/XML语法文件解析工具TinyXML2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/24/XML语法文件解析工具TinyXML2/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -247,24 +280,32 @@ tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（�
       
 
       
-        <span itemprop="articleBody"><p>本篇记录C++解析XML文件，TinyXML2支持解析XML语法的文件，不限于以.XML结尾的文件。<br>代码来自官方文档地址：<a href="http://www.grinninglizard.com/tinyxml2docs/pages.html" target="_blank" rel="external">http://www.grinninglizard.com/tinyxml2docs/pages.html</a></p>
+        <span itemprop="articleBody"><p>&#x672C;&#x7BC7;&#x8BB0;&#x5F55;C++&#x89E3;&#x6790;XML&#x6587;&#x4EF6;&#xFF0C;TinyXML2&#x652F;&#x6301;&#x89E3;&#x6790;XML&#x8BED;&#x6CD5;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x9650;&#x4E8E;&#x4EE5;.XML&#x7ED3;&#x5C3E;&#x7684;&#x6587;&#x4EF6;&#x3002;<br>&#x4EE3;&#x7801;&#x6765;&#x81EA;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x5730;&#x5740;&#xFF1A;<a href="http://www.grinninglizard.com/tinyxml2docs/pages.html" target="_blank" rel="external">http://www.grinninglizard.com/tinyxml2docs/pages.html</a></p>
 <ol>
-<li>环境：VS2013，win10</li>
-<li>tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（安装完之后要重启VS），新建一个控制台项目，创建成功后，在项目名称上右键，有一个选项“管理NuGet程序包”，点击，选择联机——&gt;All，右上角搜索tinyxml2，选择TinyXML-2安装。</li>
-<li>代码说明：<ul>
-<li>解析的xml来源可以是文件或者是字符串，两种解析方法都写了。</li>
-<li>属性值有两种表示方式，xml标签属性和子标签。两种解析方法都写了。</li>
+<li>&#x73AF;&#x5883;&#xFF1A;VS2013&#xFF0C;win10</li>
+<li>tinyxml2&#x5B89;&#x88C5;&#xFF1A;&#x4E0B;&#x8F7D;VS&#x63D2;&#x4EF6;NuGet&#xFF08;&#x7A0B;&#x5E8F;&#x5305;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#xFF09;&#xFF0C;&#x5E76;&#x5B89;&#x88C5;&#xFF08;&#x5B89;&#x88C5;&#x5B8C;&#x4E4B;&#x540E;&#x8981;&#x91CD;&#x542F;VS&#xFF09;&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x53F0;&#x9879;&#x76EE;&#xFF0C;&#x521B;&#x5EFA;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x5728;&#x9879;&#x76EE;&#x540D;&#x79F0;&#x4E0A;&#x53F3;&#x952E;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x9009;&#x9879;&#x201C;&#x7BA1;&#x7406;NuGet&#x7A0B;&#x5E8F;&#x5305;&#x201D;&#xFF0C;&#x70B9;&#x51FB;&#xFF0C;&#x9009;&#x62E9;&#x8054;&#x673A;&#x2014;&#x2014;&gt;All&#xFF0C;&#x53F3;&#x4E0A;&#x89D2;&#x641C;&#x7D22;tinyxml2&#xFF0C;&#x9009;&#x62E9;TinyXML-2&#x5B89;&#x88C5;&#x3002;</li>
+<li>&#x4EE3;&#x7801;&#x8BF4;&#x660E;&#xFF1A;<ul>
+<li>&#x89E3;&#x6790;&#x7684;xml&#x6765;&#x6E90;&#x53EF;&#x4EE5;&#x662F;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E24;&#x79CD;&#x89E3;&#x6790;&#x65B9;&#x6CD5;&#x90FD;&#x5199;&#x4E86;&#x3002;</li>
+<li>&#x5C5E;&#x6027;&#x503C;&#x6709;&#x4E24;&#x79CD;&#x8868;&#x793A;&#x65B9;&#x5F0F;&#xFF0C;xml&#x6807;&#x7B7E;&#x5C5E;&#x6027;&#x548C;&#x5B50;&#x6807;&#x7B7E;&#x3002;&#x4E24;&#x79CD;&#x89E3;&#x6790;&#x65B9;&#x6CD5;&#x90FD;&#x5199;&#x4E86;&#x3002;</li>
 </ul>
 </li>
 </ol>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">"tinyxml2.h"</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> tinyxml2;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">	XMLDocument doc;</span><br><span class="line">	<span class="comment">//Parse an XML from char buffer</span></span><br><span class="line">	<span class="comment">//Get information out of XML</span></span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">char</span>* xml =</span><br><span class="line">		<span class="string">"&lt;?xml version=\"1.0\"?&gt;"</span></span><br><span class="line">		<span class="string">"&lt;!DOCTYPE PLAY SYSTEM \"play.dtd\"&gt;"</span></span><br><span class="line">		<span class="string">"&lt;PLAY&gt;"</span></span><br><span class="line">		<span class="string">"&lt;TITLE&gt;A Midsummer Night's Dream&lt;/TITLE&gt;"</span></span><br><span class="line">		<span class="string">"&lt;/PLAY&gt;"</span>;</span><br><span class="line">	doc.Parse(xml);</span><br><span class="line">	XMLElement* titleElement = doc.FirstChildElement(<span class="string">"PLAY"</span>)-&gt;FirstChildElement(<span class="string">"TITLE"</span>);</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">char</span>* title = titleElement-&gt;GetText();</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Name of play (1):%s\n"</span>,title);<span class="comment">//输出Name of play (1):A Midsummer Night's Dream</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//Read attributes and text information.	</span></span><br><span class="line">	<span class="comment">//way 1</span></span><br><span class="line">	xml=<span class="string">"&lt;?xml version=\"1.0\"?&gt;"</span></span><br><span class="line">		<span class="string">"&lt;!DOCTYPE PLAY SYSTEM \"play.dtd\"&gt;"</span></span><br><span class="line">		<span class="string">"&lt;PLAY&gt;"</span></span><br><span class="line">		<span class="string">"&lt;TITLE&gt;A Midsummer Night's &lt;b&gt;Dream&lt;/b&gt;&lt;/TITLE&gt;"</span></span><br><span class="line">		<span class="string">"&lt;/PLAY&gt;"</span>;</span><br><span class="line">	doc.Parse(xml);</span><br><span class="line">	XMLText* textNode = titleElement-&gt;FirstChild()-&gt;ToText();</span><br><span class="line">	title = textNode-&gt;Value();</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Name of play (2): %s\n"</span>, title);<span class="comment">//输出Name of play (2): A Midsummer Night's</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//way 2</span></span><br><span class="line">	xml =<span class="string">"&lt;information&gt;"</span></span><br><span class="line">		<span class="string">"   &lt;attributeApproach v='2' /&gt;"</span></span><br><span class="line">		<span class="string">"   &lt;textApproach&gt;"</span></span><br><span class="line">		<span class="string">"       &lt;v&gt;-2&lt;/v&gt;"</span></span><br><span class="line">		<span class="string">"   &lt;/textApproach&gt;"</span></span><br><span class="line">		<span class="string">"&lt;/information&gt;"</span>;</span><br><span class="line">	doc.Parse(xml);</span><br><span class="line">	<span class="keyword">int</span> v0=-<span class="number">1</span>;</span><br><span class="line">	XMLElement* attributeApproachElement = doc.FirstChildElement()-&gt;FirstChildElement(<span class="string">"attributeApproach"</span>);</span><br><span class="line">	attributeApproachElement-&gt;QueryAttribute(<span class="string">"v"</span>, &amp;v0);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"v0=%d\n"</span>, v0);<span class="comment">//输出v0=2</span></span><br><span class="line">	<span class="keyword">int</span> v1 = -<span class="number">1</span>;</span><br><span class="line">	XMLElement* textApproachElement = doc.FirstChildElement()-&gt;FirstChildElement(<span class="string">"textApproach"</span>);</span><br><span class="line">	textApproachElement-&gt;FirstChildElement(<span class="string">"v"</span>)-&gt;QueryIntText(&amp;v1);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"v1=%d\n"</span>, v1);<span class="comment">//输出v1=-2</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//load xml file and get information out of xml file</span></span><br><span class="line">	doc.LoadFile(<span class="string">"test.xml"</span>);</span><br><span class="line">	titleElement = <span class="literal">NULL</span>;</span><br><span class="line">	title = <span class="literal">NULL</span>;</span><br><span class="line">	titleElement = doc.FirstChildElement(<span class="string">"PLAY"</span>)-&gt;FirstChildElement(<span class="string">"TITLE"</span>);</span><br><span class="line">	title = titleElement-&gt;GetText();</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Name of play (1):%s\n"</span>, title);<span class="comment">//输出Name of play (1):A Midsummer Night's Dream</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>test.xml文件如下<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">&lt;?xml version="1.0"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">PLAY</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">TITLE</span>&gt;</span>A Midsummer Night's Dream<span class="tag">&lt;/<span class="title">TITLE</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">PLAY</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>结果显示如下：<br><img src="http://img.hoop8.com/attachments/1512/1893401810423.png" alt="result"></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&quot;tinyxml2.h&quot;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> tinyxml2;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>{</span><br><span class="line">	XMLDocument doc;</span><br><span class="line">	<span class="comment">//Parse an XML from char buffer</span></span><br><span class="line">	<span class="comment">//Get information out of XML</span></span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">char</span>* xml =</span><br><span class="line">		<span class="string">&quot;&lt;?xml version=\&quot;1.0\&quot;?&gt;&quot;</span></span><br><span class="line">		<span class="string">&quot;&lt;!DOCTYPE PLAY SYSTEM \&quot;play.dtd\&quot;&gt;&quot;</span></span><br><span class="line">		<span class="string">&quot;&lt;PLAY&gt;&quot;</span></span><br><span class="line">		<span class="string">&quot;&lt;TITLE&gt;A Midsummer Night&apos;s Dream&lt;/TITLE&gt;&quot;</span></span><br><span class="line">		<span class="string">&quot;&lt;/PLAY&gt;&quot;</span>;</span><br><span class="line">	doc.Parse(xml);</span><br><span class="line">	XMLElement* titleElement = doc.FirstChildElement(<span class="string">&quot;PLAY&quot;</span>)-&gt;FirstChildElement(<span class="string">&quot;TITLE&quot;</span>);</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">char</span>* title = titleElement-&gt;GetText();</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Name of play (1):%s\n&quot;</span>,title);<span class="comment">//&#x8F93;&#x51FA;Name of play (1):A Midsummer Night&apos;s Dream</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//Read attributes and text information.	</span></span><br><span class="line">	<span class="comment">//way 1</span></span><br><span class="line">	xml=<span class="string">&quot;&lt;?xml version=\&quot;1.0\&quot;?&gt;&quot;</span></span><br><span class="line">		<span class="string">&quot;&lt;!DOCTYPE PLAY SYSTEM \&quot;play.dtd\&quot;&gt;&quot;</span></span><br><span class="line">		<span class="string">&quot;&lt;PLAY&gt;&quot;</span></span><br><span class="line">		<span class="string">&quot;&lt;TITLE&gt;A Midsummer Night&apos;s &lt;b&gt;Dream&lt;/b&gt;&lt;/TITLE&gt;&quot;</span></span><br><span class="line">		<span class="string">&quot;&lt;/PLAY&gt;&quot;</span>;</span><br><span class="line">	doc.Parse(xml);</span><br><span class="line">	XMLText* textNode = titleElement-&gt;FirstChild()-&gt;ToText();</span><br><span class="line">	title = textNode-&gt;Value();</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Name of play (2): %s\n&quot;</span>, title);<span class="comment">//&#x8F93;&#x51FA;Name of play (2): A Midsummer Night&apos;s</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//way 2</span></span><br><span class="line">	xml =<span class="string">&quot;&lt;information&gt;&quot;</span></span><br><span class="line">		<span class="string">&quot;   &lt;attributeApproach v=&apos;2&apos; /&gt;&quot;</span></span><br><span class="line">		<span class="string">&quot;   &lt;textApproach&gt;&quot;</span></span><br><span class="line">		<span class="string">&quot;       &lt;v&gt;-2&lt;/v&gt;&quot;</span></span><br><span class="line">		<span class="string">&quot;   &lt;/textApproach&gt;&quot;</span></span><br><span class="line">		<span class="string">&quot;&lt;/information&gt;&quot;</span>;</span><br><span class="line">	doc.Parse(xml);</span><br><span class="line">	<span class="keyword">int</span> v0=-<span class="number">1</span>;</span><br><span class="line">	XMLElement* attributeApproachElement = doc.FirstChildElement()-&gt;FirstChildElement(<span class="string">&quot;attributeApproach&quot;</span>);</span><br><span class="line">	attributeApproachElement-&gt;QueryAttribute(<span class="string">&quot;v&quot;</span>, &amp;v0);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;v0=%d\n&quot;</span>, v0);<span class="comment">//&#x8F93;&#x51FA;v0=2</span></span><br><span class="line">	<span class="keyword">int</span> v1 = -<span class="number">1</span>;</span><br><span class="line">	XMLElement* textApproachElement = doc.FirstChildElement()-&gt;FirstChildElement(<span class="string">&quot;textApproach&quot;</span>);</span><br><span class="line">	textApproachElement-&gt;FirstChildElement(<span class="string">&quot;v&quot;</span>)-&gt;QueryIntText(&amp;v1);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;v1=%d\n&quot;</span>, v1);<span class="comment">//&#x8F93;&#x51FA;v1=-2</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">//load xml file and get information out of xml file</span></span><br><span class="line">	doc.LoadFile(<span class="string">&quot;test.xml&quot;</span>);</span><br><span class="line">	titleElement = <span class="literal">NULL</span>;</span><br><span class="line">	title = <span class="literal">NULL</span>;</span><br><span class="line">	titleElement = doc.FirstChildElement(<span class="string">&quot;PLAY&quot;</span>)-&gt;FirstChildElement(<span class="string">&quot;TITLE&quot;</span>);</span><br><span class="line">	title = titleElement-&gt;GetText();</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Name of play (1):%s\n&quot;</span>, title);<span class="comment">//&#x8F93;&#x51FA;Name of play (1):A Midsummer Night&apos;s Dream</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<p>test.xml&#x6587;&#x4EF6;&#x5982;&#x4E0B;<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">&lt;?xml version=&quot;1.0&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">PLAY</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">TITLE</span>&gt;</span>A Midsummer Night&apos;s Dream<span class="tag">&lt;/<span class="title">TITLE</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">PLAY</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>&#x7ED3;&#x679C;&#x663E;&#x793A;&#x5982;&#x4E0B;&#xFF1A;<br><img src="http://img.hoop8.com/attachments/1512/1893401810423.png" alt="result"></p>
 </span>
       
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/C/" rel="tag">#C++</a>
+          
+            <a href="/tags/XML/" rel="tag">#XML</a>
+          
+        </div>
       
 
       
@@ -296,6 +337,25 @@ tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（�
 
     <div class="post-spread">
       
+        <div class="ds-share flat" data-thread-key="2015/12/24/XML语法文件解析工具TinyXML2/"
+     data-title="XML语法文件解析工具TinyXML2"
+     data-content=""
+     data-url="http://yoursite.com/2015/12/24/XML语法文件解析工具TinyXML2/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
     </div>
   </div>
 
@@ -304,9 +364,29 @@ tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（�
 
         
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
         
   <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2015/12/24/XML语法文件解析工具TinyXML2/"
+           data-title="XML语法文件解析工具TinyXML2" data-url="http://yoursite.com/2015/12/24/XML语法文件解析工具TinyXML2/">
+      </div>
+      <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"simonsundev"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
     
   </div>
 
@@ -349,21 +429,21 @@ tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（�
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -422,7 +502,7 @@ tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（�
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2015 - 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
     <i class="icon-next-heart fa fa-heart"></i>
@@ -437,7 +517,7 @@ tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（�
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT
+    NexT.Mist
   </a>
 </div>
 
@@ -456,11 +536,28 @@ tinyxml2安装：下载VS插件NuGet（程序包管理工具），并安装（�
 
   
     
-    
 
   
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"simonsundev"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
 
 
+    
   
 
   
